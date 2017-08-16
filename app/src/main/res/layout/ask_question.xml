@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp">
+
+        <Button
+            android:id="@+id/submit_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:layout_alignParentLeft="true"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/net_err"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/submit_post"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer">
+
+        <EditText
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="7dp"
+            android:hint="Topic (Question regarding what?)"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2dp"
+            android:maxLength="145" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:maxLength="2900"
+            android:textSize="16dp"
+            android:textColor="#323232"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2dp"
+            android:scrollHorizontally="false" />
+    </RelativeLayout>
+</RelativeLayout>
