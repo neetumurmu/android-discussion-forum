@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topic"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="2dp"
+        tools:text="My First Post : This is a very long topic containing long terms." />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:lineSpacingExtra="5dp"
+        android:letterSpacing="0.02"
+        android:textColor="#4c4c4c"
+        tools:text="This a very long description about the topic described in the above section. This will get longer and longer with time. and lastly end with a question to which everyone will scratch their head. This is very interesting , isn't it? People will give review but I don't fucking care about what they will say. It won't affect mein any way."
+        android:autoLink="web"/>
+
+
+
+</LinearLayout>
