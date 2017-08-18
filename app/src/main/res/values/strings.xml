@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Discussion Forum</string>
+    <string name="hint_login">Log In</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_link_signup">Haven\'t signed up yet? Sign up now!</string>
+    <string name="hint_link_forgotten_password">Forgotten password?</string>
+    <string name="hint_signup">Sign Up</string>
+    <string name="hint_name">Name</string>
+    <string name="proceed">Proceed</string>
+    <string name="hint_roll">Enter Roll No.</string>
+</resources>
