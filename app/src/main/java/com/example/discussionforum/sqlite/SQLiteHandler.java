@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.HashMap;
 
@@ -11,7 +12,7 @@ import java.util.HashMap;
  * Created by neetu on 14/8/17.
  */
 
-public class SQLiteHandler {
+public class SQLiteHandler extends SQLiteOpenHelper {
     private static final String TAG = SQLiteHandler.class.getSimpleName();  //Logcat Tag
     private static final int DATABASE_VERSION = 1;           // Database Version
     private static final String DATABASE_NAME = "db_name";    // Database Name
