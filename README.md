@@ -1,6 +1,6 @@
 # android-discussion-forum
 
-App implements a discussio-forum which allows users to:
+App implements a discussion-forum which allows users to:
 
   1. Add a new topic of discussion.
   2. Add an answer to an existing topic.
